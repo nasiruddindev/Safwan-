@@ -13,7 +13,7 @@ const Service = () => {
   return (
     <section className="py-[100px]">
       <Container>
-        <Subtitle text="MY SERVICES" className="text-center" />
+        <Subtitle text="MY SERVICES" className="text-center" icon="justify-center" />
         <Title
           className="w-[517px] mx-auto text-center pt-3 pb-10"
           text="Provide Wide Range of

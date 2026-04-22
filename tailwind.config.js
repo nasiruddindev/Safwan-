@@ -16,6 +16,9 @@ export default {
       },
       fontSize:{
         "titleSize":"50px"
+      },
+      backgroundImage: {
+        'banner': "url('/src/assets/banner.JPG')"
       }
     },
   },
