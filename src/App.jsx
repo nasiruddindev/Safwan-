@@ -5,6 +5,9 @@ import Service from './layouts/Service'
 import Banner from './layouts/Banner'
 import About from './layouts/About'
 import Project from './layouts/Project'
+import Portfolio from './layouts/Portfolio'
+import Client from './layouts/Client'
+import Blog from './layouts/Blog'
 
 const App = () => {
   return (
@@ -14,6 +17,9 @@ const App = () => {
       <Service/>
       <About/>
       <Project/>
+      <Portfolio/>
+      <Client/>
+      <Blog/>
     </div>
   )
 }
