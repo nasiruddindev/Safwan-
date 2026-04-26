@@ -10,7 +10,7 @@ const Blog = () => {
   let date=new Date();
   let time=date.toLocaleTimeString()
   return (
-    <section>
+    <section className='py-[120px]'>
       <Container>
         <Subtitle text="Latest Blogs" icon="justify-center"/>
         <Title text="Blog & Articles" className="text-center pb-[40px]"/>

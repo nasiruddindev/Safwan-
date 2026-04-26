@@ -7,6 +7,8 @@ import Pera from '../components/Pera'
 import Button from '../components/Button'
 import Photo from "../assets/banner.JPG"
 import Image from '../components/Image'
+import Grid from '../components/Grid'
+import AboutProg from '../components/AboutProg'
 
 const About = () => {
   return (
@@ -45,6 +47,13 @@ const About = () => {
             <Button text="Download CV"/>
           </div>
         </Flex>
+
+        <Grid className="grid-cols-4 gap-x-[30px] mt-[80px]">
+          <AboutProg number="70%" text="Graphics Design"/>
+          <AboutProg number="85%" text="Web Designing"/>
+          <AboutProg number="60%" text="Brand Design"/>
+          <AboutProg number="40%" text="Web Development"/>
+        </Grid>
       </Container>
     </section>
   )

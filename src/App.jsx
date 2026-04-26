@@ -8,6 +8,7 @@ import Project from './layouts/Project'
 import Portfolio from './layouts/Portfolio'
 import Client from './layouts/Client'
 import Blog from './layouts/Blog'
+import Fotter from './layouts/Fotter'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Portfolio/>
       <Client/>
       <Blog/>
+      <Fotter/>
     </div>
   )
 }
