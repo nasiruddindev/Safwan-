@@ -14,29 +14,45 @@ const About = () => {
   return (
     <section className="pt-[88px] pb-[120px]">
       <Container>
-        <Flex className="justify-between items-center gap-x-[30px]">
-          <div className="flex gap-x-[30px] items-center">
-            <div className="h-[480px] w-[370px]">
+        <div className='w-[100vw] md:w-full'>
+
+
+          <Flex className="flex-wrap  items-center">
+
+
+
+          <Flex className="md:w-1/2 flex-wrap gap-x-[30px] gap-y-6 md:gap-y-0">
+            <div className="mx-auto h-[480px] w-[370px] ">
               <Image src={Photo} className="w-full h-full"/>
             </div>
-            <div className="flex flex-col gap-y-[30px]">
-              <div className="w-[170px] h-[225px]">
+
+
+
+            <Flex className="mx-auto flex-col gap-y-[30px]">
+
+
+              <div className="w-[370px] h-[480px] md:w-[170px] md:h-[225px]">
                 <Image src={Photo} className="w-full h-full"/>
               </div>
-              <div className="w-[170px] h-[225px]">
+
+
+              <div className="w-[370px] h-[480px] md:w-[170px] md:h-[225px]">
                 <Image src={Photo} className="w-full h-full"/>
               </div>
-            </div>
-          </div>
-          <div>
-            <Subtitle text="About Me" />
+
+            </Flex>
+          </Flex>
+
+
+          <div className='md:w-1/2 px-3 md:px-0 md:pl-[30px] pt-10 md:pt-0'>
+            <Subtitle text="About Me" icon="justify-center md:justify-start" />
             <Title
-            className="leading-[56px]"
+            className="leading-[50px]  text-center md:text-left md:leading-[56px]"
               text="I Enjoy Solving Problems
                With Scalable Solutions"
             />
             <Pera
-            className="pb-[50px]"
+            className="pb-[50px] text-center md:text-left pt-5 md:pt-0"
               text="Quisruam est, qui dolorem ipsum quia dolor sit amet, consecteaur
               aeci velit, sed quia non numquam eius modi               tempora incidunt lao
               magnam aliquam quaerat voluptatem reprehenderit.
@@ -44,16 +60,20 @@ const About = () => {
               Modi tempora incidunt ut lao magnam aliquam               quaerat voluptatem
               reprehenderit non numquam eius."
             />
-            <Button text="Download CV"/>
+            <div className='text-center md:text-left'>
+              <Button text="Download CV"/>
+            </div>
           </div>
         </Flex>
 
-        <Grid className="grid-cols-4 gap-x-[30px] mt-[80px]">
+
+        <Grid className="grid-cols-1 mt-10  gap-y-10 md:gap-y-0 md:grid-cols-4 md:gap-x-[30px] md:mt-[80px]">
           <AboutProg number="70%" text="Graphics Design"/>
           <AboutProg number="85%" text="Web Designing"/>
           <AboutProg number="60%" text="Brand Design"/>
           <AboutProg number="40%" text="Web Development"/>
         </Grid>
+        </div>
       </Container>
     </section>
   )

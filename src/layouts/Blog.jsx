@@ -12,15 +12,17 @@ const Blog = () => {
   return (
     <section className='py-[120px]'>
       <Container>
-        <Subtitle text="Latest Blogs" icon="justify-center"/>
+        <div className='w-[100vw] md:w-full'>
+          <Subtitle text="Latest Blogs" icon="justify-center"/>
         <Title text="Blog & Articles" className="text-center pb-[40px]"/>
-        <Grid className="grid-cols-3 gap-x-[30px]">
+        <Grid className="md:grid-cols-3 gap-x-[30px] gap-y-7 md:gap-y-0">
           <ProCard src={Photo} subtitle="By David William" date={time} title="Quis autem vea eum iure reprehenderit." pera="Dolor repellendus temporibus autem rerum quibusdam officiis debitis nece." ani="Read More"/>
           <ProCard src={Photo} subtitle="By Will Doie" date={time} title="Reprehenderit in vouta
           velit esse cillum." pera="Dolor repellendus temporibus autem rerum quibusdam officiis debitis nece." ani="Read More"/>
           <ProCard src={Photo} subtitle="By Adam Smith" date={time} title="Soluta nobis ose aligen
           optio cumue." pera="Dolor repellendus temporibus autem rerum quibusdam officiis debitis nece." ani="Read More"/>
         </Grid>
+        </div>
       </Container>
     </section>
   )

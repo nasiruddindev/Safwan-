@@ -4,22 +4,24 @@ import { GoArrowRight } from 'react-icons/go'
 
 const PortfolioCard = ({src,title,pera}) => {
   return (
-    <div>
+    <div className='mx-auto w-[350px] md:w-full'>
       <div className='group relative cursor-pointer'>
         <Image src={src} className="w-full h-[420px]"/>
-        <div className='absolute top-0 left-0 w-0 h-full group-hover:bg-[#00413d66] group-hover:w-full duration-300'>
+        <div className='hidden md:block absolute top-0 left-0 w-0 h-full group-hover:bg-[#00413d66] group-hover:w-full duration-300'>
 
 
 
 
         </div>
-         <div className='opacity-0 absolute top-0 left-0  w-[70px] h-[70px] rounded-full bg-white flex justify-center items-center group-hover:opacity-100 group-hover:left-[85%] group-hover:top-[10px] duration-300'>
+         <div className='hidden md:block'>
+          <div className='opacity-0 absolute top-0 left-0  w-[70px] h-[70px] rounded-full bg-white flex justify-center items-center group-hover:opacity-100 group-hover:left-[85%] group-hover:top-[10px] duration-300'>
 
 
           <GoArrowRight className='text-3xl text-secondary'/>
 
 
         </div>
+         </div>
 
 
       </div>

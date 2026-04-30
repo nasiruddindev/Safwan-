@@ -11,19 +11,26 @@ import Button from '../components/Button'
 
 const Contact = () => {
   return (
-    <section className='pt-[110px]'>
+    <section className='pt-[70px] md:pt-[110px]'>
       <Container>
-        <Flex className="justify-center items-center">
-          <div className='w-5/12'>
-          <div className='w-[95%] h-[580px] bg-red-500'>
+        <div className='w-[100vw] md:w-full'>
+
+
+          <Flex className="flex-wrap justify-center items-center">
+
+
+          <div className='md:w-5/12'>
+          <div className='mx-auto md:mx-0 w-[95%] h-[580px] bg-red-500'>
             <Image src={Photo} className="h-full"/>
           </div>
           </div>
-          <div className='w-7/12'>
-          <Subtitle text="Get In Touch"/>
-          <Title text="Feel Free to Contact"/>
 
-          <Grid className="grid-cols-2 mt-10 gap-x-[70px] gap-y-[57px]">
+
+          <div className='md:w-7/12 mt-10 md:mt-0'>
+          <Subtitle text="Get In Touch" icon="justify-center md:justify-start"/>
+          <Title text="Feel Free to Contact" className="text-center md:text-left"/>
+
+          <Grid className="grid-cols-2 mt-10 gap-x-[30px] md:gap-x-[70px] gap-y-[57px]">
             <ContactInput type="text" placeholder="Enter Name" className="w-full"/>
             <ContactInput type="email" placeholder="Enter Email" className="w-full"/>
             <ContactInput type="number" placeholder="Phone" className="w-full"/>
@@ -31,12 +38,13 @@ const Contact = () => {
           </Grid>
             <ContactInput type="text" placeholder="Subject" className="w-full mt-[57px]"/>
 
-            <div className="mt-[50px]">
+            <div className="mt-[50px] text-center md:text-start">
               <Button text="Contact Us" />
             </div>
 
           </div>
         </Flex>
+        </div>
       </Container>
     </section>
   )

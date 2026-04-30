@@ -6,7 +6,7 @@ import { GoArrowRight } from 'react-icons/go'
 
 const ProCard = ({ src,subtitle,title,pera,ani,date }) => {
   return (
-    <div className='group cursor-pointer shadow-xl rounded-md overflow-hidden'>
+    <div className='w-[350px] md:w-full mx-auto group cursor-pointer shadow-xl rounded-md overflow-hidden'>
       <Image src={src} className="w-full h-[270px]" />
      <div className='p-[30px]'>
        <Flex className="justify-between">

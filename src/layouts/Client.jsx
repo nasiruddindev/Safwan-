@@ -11,19 +11,27 @@ import Grid from '../components/Grid'
 
 const Client = () => {
   return (
-    <section className="bg-[#F9f4F1] pt-[120px] pb-[170px]">
+    <section className="bg-[#F9f4F1] pt-[80px] md:pt-[120px] pb-[100px] md:pb-[170px]">
       <Container>
-        <Subtitle text="Client Testimonial" icon="justify-center"/>
+        <div className='w-[100vw] md:w-full'>
+
+
+
+          <Subtitle text="Client Testimonial" icon="justify-center"/>
         <Title text="Feedback From Client" className="text-center"/>
-        <Grid className="grid-cols-2 gap-x-[30px] pt-[40px]">
-          <div>
-            <div className="w-full h-2 bg-secondary"></div>
-            <div className='p-10 bg-white'>
+
+
+
+
+
+        <Grid className="grid-cols-1 md:grid-cols-2 gap-x-[30px] pt-[40px] gap-y-7 md:gap-y-0">
+          <div className='w-[350px] md:w-full mx-auto'>
+            <div className='p-10 bg-white border-t-8 border-secondary '>
             <Pera text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry."/>
           </div>
           <div className='mt-5 flex items-center gap-x-[30px]'>
-            <div className=' ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
+            <div className=' ml-[50px] md:ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
               <Image src={Photo} className="w-full h-full rounded-full"/>
             </div>
             <div>
@@ -39,14 +47,13 @@ const Client = () => {
             </div>
           </div>
           </div>
-          <div>
-            <div className="w-full h-2 bg-secondary"></div>
-            <div className='p-10 bg-white'>
+          <div className='w-[350px] md:w-full mx-auto'>
+            <div className='p-10 bg-white border-t-8 border-secondary'>
             <Pera text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry."/>
           </div>
           <div className='mt-5 flex items-center gap-x-[30px]'>
-            <div className=' ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
+            <div className='ml-[50px] md:ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
               <Image src={Photo} className="w-full h-full rounded-full"/>
             </div>
             <div>
@@ -67,6 +74,7 @@ const Client = () => {
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
+        </div>
         </div>
       </Container>
     </section>

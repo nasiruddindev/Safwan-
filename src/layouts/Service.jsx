@@ -11,15 +11,18 @@ import Card3 from "../assets/card3.png"
 
 const Service = () => {
   return (
-    <section className="py-[100px]">
+    <section className="py-[50px] md:py-[100px]">
       <Container>
-        <Subtitle text="MY SERVICES" className="text-center"  icon="justify-center" />
+        <div className='w-[100vw] md:w-full'>
+          <Subtitle text="MY SERVICES" className="text-center"  icon="justify-center" />
         <Title
-          className="w-[517px] mx-auto text-center pb-10"
+          className="md:w-[517px] md:mx-auto text-center pb-10"
           text="Provide Wide Range of
          Digital Services"
         />
-        <Flex className="justify-between">
+        </div>
+        <div className='w-[100vw] md:w-full'>
+          <Flex className="flex-wrap justify-center md:justify-between gap-y-5 md:gap-y-0">
           <Card
           src={Card1}
             title="Ui/Ux Design"
@@ -42,6 +45,7 @@ const Service = () => {
                 aibus minima veniam."
           />
         </Flex>
+        </div>
       </Container>
     </section>
   )

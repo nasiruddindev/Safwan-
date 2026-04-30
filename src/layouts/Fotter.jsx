@@ -12,8 +12,9 @@ const Fotter = () => {
   return (
     <section className='py-[80px] bg-primary'>
       <Container>
-        <Image src={Logo} className="mx-auto"/>
-        <Flex className="justify-center">
+        <div className='w-[100vw] md:w-full'>
+          <Image src={Logo} className="mx-auto"/>
+        <Flex className="flex-wrap justify-center">
           <FotterList text="Home"/>
           <FotterList text="About"/>
           <FotterList text="Service"/>
@@ -26,6 +27,7 @@ const Fotter = () => {
           <div className='bg-secondary rounded-full p-4'><FaInstagram className='text-white text-[34px]'/></div>
           <div className='bg-secondary rounded-full p-4'><SiBehance className='text-white text-[34px] '/></div>
         </Flex>
+        </div>
       </Container>
     </section>
   )
