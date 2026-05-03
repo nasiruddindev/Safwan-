@@ -4,7 +4,7 @@ import Subtitle from '../components/Subtitle'
 import Title from '../components/Title'
 import Pera from '../components/Pera'
 import Image from "../components/Image"
-import Photo from "../assets/banner.JPG"
+import ClientImg from '../assets/client.jpg'
 import { FaStar } from "react-icons/fa6";
 import { TbCircleDotFilled } from "react-icons/tb";
 import Grid from '../components/Grid'
@@ -32,7 +32,7 @@ const Client = () => {
           </div>
           <div className='mt-5 flex items-center gap-x-[30px]'>
             <div className=' ml-[50px] md:ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
-              <Image src={Photo} className="w-full h-full rounded-full"/>
+              <Image src={ClientImg} className="w-full h-full rounded-full"/>
             </div>
             <div>
               <h4 className='font-vollkorn font-semibold text-[20px]'>Michale Doie</h4>
@@ -54,7 +54,7 @@ const Client = () => {
           </div>
           <div className='mt-5 flex items-center gap-x-[30px]'>
             <div className='ml-[50px] md:ml-[100px] relative h-[75px] w-[75px] rounded-full bg-red-500 after:absolute after:top-[-5px] after:left-[-5px] after:w-[85px] after:h-[85px] after:content=[""] after:border after:border-secondary after:rounded-full'>
-              <Image src={Photo} className="w-full h-full rounded-full"/>
+              <Image src={ClientImg} className="w-full h-full rounded-full"/>
             </div>
             <div>
               <h4 className='font-vollkorn font-semibold text-[20px]'>Adam Smith</h4>

@@ -8,8 +8,11 @@ import { GoArrowLeft } from 'react-icons/go'
 import Card from '../components/Card'
 import Grid from '../components/Grid'
 import ProCard from '../components/ProCard'
-import Photo from "../assets/banner.JPG"
 import Button from '../components/Button'
+import Ux from '../assets/ux.jpg'
+import Mobile from '../assets/mobile.png'
+import Web from '../assets/web.png'
+
 
 const Project = () => {
   return (
@@ -33,18 +36,18 @@ const Project = () => {
 
 
         <Grid className="grid-cols-1 md:grid-cols-3 gap-x-5 gap-y-8 md:gap-y-0">
-          <ProCard src={Photo} subtitle="Analytics, UI-Ux" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
+          <ProCard src={Ux} subtitle="Analytics, UI-Ux" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
           Printing And Typesetting Industry." ani="View Case Studies"/>
 
 
 
-          <ProCard src={Photo} subtitle="Mobile App" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
+          <ProCard src={Mobile} subtitle="Mobile App" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
           Printing And Typesetting Industry." ani="View Case Studies"/>
 
 
 
 
-          <ProCard src={Photo} subtitle="Web Development" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
+          <ProCard src={Web} subtitle="Web Development" title="Branding & Digital Video Campaign For George’s Cafe" pera="Lorem Ipsum Is Simply Dummy Text Of The
           Printing And Typesetting Industry." ani="View Case Studies"/>
         </Grid>
         <div className='pt-[60px] text-center'>

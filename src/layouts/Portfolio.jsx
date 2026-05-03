@@ -5,8 +5,11 @@ import Title from '../components/Title'
 import PortfolioList from '../components/PortfolioList'
 import Flex from '../components/Flex'
 import PortfolioCard from '../components/PortfolioCard'
-import Photo from "../assets/banner.JPG"
 import Grid from '../components/Grid'
+import Visual from '../assets/visual.jpg'
+import Wapp from '../assets/wapp.jpg'
+import Motion from '../assets/motion.jpg'
+import E from '../assets/e.jpg'
 
 const Portfolio = () => {
   return (
@@ -24,10 +27,10 @@ const Portfolio = () => {
         <PortfolioList text="Product"/>
         </Flex>
         <Grid className="grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
-          <PortfolioCard src={Photo} title="Motion Graphics" pera="Website"/>
-          <PortfolioCard src={Photo} title="E-Learning App" pera="IOS App"/>
-          <PortfolioCard src={Photo} title="Web Application" pera="Desktop"/>
-          <PortfolioCard src={Photo} title="Visual Design" pera="Desktop "/>
+          <PortfolioCard src={Motion} title="Motion Graphics" pera="Website"/>
+          <PortfolioCard src={E} title="E-Learning App" pera="IOS App"/>
+          <PortfolioCard src={Wapp} title="Web Application" pera="Desktop"/>
+          <PortfolioCard src={Visual} title="Visual Design" pera="Desktop "/>
         </Grid>
         </div>
       </Container>
