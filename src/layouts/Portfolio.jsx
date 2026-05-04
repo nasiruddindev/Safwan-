@@ -15,18 +15,18 @@ const Portfolio = () => {
   return (
     <section className="pb-[80px] md:pb-[120px]">
       <Container>
-        <div className='w-[100vw] md:w-full'>
+        <div className='w-[100vw] xl:w-full'>
           <Subtitle text="My Portfolio" icon="justify-center"/>
         <Title text="My Work Example" className="text-center pb-6"/>
 
-        <Flex className="justify-center gap-x-3 md:gap-x-[30px]">
+        <Flex className="justify-center gap-x-3 sm:gap-x-[30px]">
           <PortfolioList text="All"/>
         <PortfolioList text="Branding"/>
         <PortfolioList text="Photography"/>
         <PortfolioList text="Fashion"/>
         <PortfolioList text="Product"/>
         </Flex>
-        <Grid className="grid-cols-1 md:grid-cols-2 gap-[30px] mt-10">
+        <Grid className="grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-[30px] mt-10">
           <PortfolioCard src={Motion} title="Motion Graphics" pera="Website"/>
           <PortfolioCard src={E} title="E-Learning App" pera="IOS App"/>
           <PortfolioCard src={Wapp} title="Web Application" pera="Desktop"/>

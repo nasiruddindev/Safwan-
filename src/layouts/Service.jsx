@@ -11,9 +11,9 @@ import Card3 from "../assets/card3.png"
 
 const Service = () => {
   return (
-    <section className="py-[50px] md:py-[100px]">
+    <section className="py-[50px] lg:py-[100px]">
       <Container>
-        <div className='w-[100vw] md:w-full'>
+        <div className='w-[100vw] xl:w-full'>
           <Subtitle text="MY SERVICES" className="text-center"  icon="justify-center" />
         <Title
           className="md:w-[517px] md:mx-auto text-center pb-10"
@@ -21,8 +21,8 @@ const Service = () => {
          Digital Services"
         />
         </div>
-        <div className='w-[100vw] md:w-full'>
-          <Flex className="flex-wrap justify-center md:justify-between gap-y-5 md:gap-y-0">
+        <div className='w-[100vw] xl:w-full'>
+          <Flex className="flex-wrap justify-center xl:justify-between gap-10 xl:gap-0">
           <Card
           src={Card1}
             title="Ui/Ux Design"

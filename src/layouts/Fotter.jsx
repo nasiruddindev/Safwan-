@@ -12,7 +12,7 @@ const Fotter = () => {
   return (
     <section className='py-[80px] bg-primary'>
       <Container>
-        <div className='w-[100vw] md:w-full'>
+        <div className='w-[100vw] xl:w-full'>
           <Image src={Logo} className="mx-auto"/>
         <Flex className="flex-wrap justify-center">
           <FotterList text="Home"/>

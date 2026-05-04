@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className='py-4'>
       <Container>
 
-        <div className='w-[100vw] px-5 md:px-0 md:w-full'>
+        <div className='w-[100vw] px-5 lg:px-0 xl:w-full'>
           <Flex className="justify-between items-center">
           <div>
             <Image src={Logo}/>
@@ -27,7 +27,7 @@ const Navbar = () => {
           <div className={`md:static absolute duration-300 ${showMenu ?  "top-[70px]" : "top-[-100%]"}  left-0 w-full md:w-auto bg-white z-10 text-center `}>
 
 
-            <ul className='flex flex-col md:flex-row md:gap-x-12 gap-y-5 py-5'>
+            <ul className='flex flex-col md:flex-row md:gap-x-8 lg:gap-x-12 gap-y-5 py-5'>
               <ListItem text="Home"/>
               <ListItem text="Page"/>
               <ListItem text="Service"/>
