@@ -12,7 +12,6 @@ const Blog = () => {
   return (
     <section className='py-[70px] lg:py-[120px]'>
       <Container>
-        <div className='w-[100vw] xl:w-full'>
           <Subtitle text="Latest Blogs" icon="justify-center"/>
         <Title text="Blog & Articles" className="text-center pb-[40px]"/>
         <Grid className="md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-7 ">
@@ -22,7 +21,6 @@ const Blog = () => {
           <ProCard src={Photo} subtitle="By Adam Smith" date={time} title="Soluta nobis ose aligen
           optio cumue." pera="Dolor repellendus temporibus autem rerum quibusdam officiis debitis nece." ani="Read More"/>
         </Grid>
-        </div>
       </Container>
     </section>
   )

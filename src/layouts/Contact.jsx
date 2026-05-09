@@ -13,7 +13,6 @@ const Contact = () => {
   return (
     <section className='pt-[70px] lg:pt-[110px]'>
       <Container>
-        <div className='w-[100vw] xl:w-full'>
 
 
           <Flex className="flex-wrap justify-center items-center">
@@ -44,7 +43,6 @@ const Contact = () => {
 
           </div>
         </Flex>
-        </div>
       </Container>
     </section>
   )

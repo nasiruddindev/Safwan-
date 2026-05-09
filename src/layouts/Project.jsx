@@ -17,7 +17,6 @@ const Project = () => {
   return (
     <section className="mb-[120px]">
       <Container>
-        <div className="w-[100vw] xl:w-full">
           <div className="sm:px-5 md:px-0">
             <Subtitle
               text="Recent Projects"
@@ -72,7 +71,6 @@ const Project = () => {
           <div className="pt-[60px] text-center">
             <Button text="Explore More" className />
           </div>
-        </div>
       </Container>
     </section>
   )

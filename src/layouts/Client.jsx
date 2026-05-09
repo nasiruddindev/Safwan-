@@ -13,19 +13,16 @@ const Client = () => {
   return (
     <section className="bg-[#F9f4F1] pt-[80px] lg:pt-[120px] pb-[100px] lg:pb-[150px]">
       <Container>
-        <div className='w-[100vw] xl:w-full'>
-
-
-
           <Subtitle text="Client Testimonial" icon="justify-center"/>
         <Title text="Feedback From Client" className="text-center"/>
 
 
 
 
+        <Grid className="grid-cols-1 md:grid-cols-2 md:gap-x-[30px] pt-[40px] gap-y-7 md:gap-y-0">
 
-        <Grid className="grid-cols-1 md:grid-cols-2 lg:gap-x-[30px] pt-[40px] gap-y-7 md:gap-y-0">
-          <div className='w-[350px] md:w-[370px] lg:w-full mx-auto'>
+
+          <div className='w-[85%]  md:w-full mx-auto'>
             <div className='p-10 bg-white border-t-8 border-secondary '>
             <Pera text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry."/>
@@ -47,7 +44,10 @@ const Client = () => {
             </div>
           </div>
           </div>
-          <div className='w-[350px] md:w-[370px] lg:w-full mx-auto'>
+
+
+
+          <div className='w-[85%] md:w-full mx-auto'>
             <div className='p-10 bg-white border-t-8 border-secondary'>
             <Pera text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and this
             typesetting industry."/>
@@ -70,11 +70,15 @@ const Client = () => {
           </div>
           </div>
         </Grid>
+
+
+
+
+
         <div className='flex justify-center mt-[87px] gap-x-2'>
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
           <TbCircleDotFilled className='text-[#D9D9D9] hover:text-secondary duration-500 hover:scale-150 cursor-pointer'/>
-        </div>
         </div>
       </Container>
     </section>

@@ -14,7 +14,6 @@ const About = () => {
   return (
     <section className="pt-[88px] pb-[80px] lg:pb-[120px]">
       <Container>
-        <div className='w-[100vw] xl:w-full'>
 
 
           <Flex className="flex-col-reverse   lg:flex-row flex-wrap  items-center">
@@ -44,7 +43,7 @@ const About = () => {
           </Flex>
 
 
-          <div className='lg:w-1/2 px-3 md:px-0 md:pl-[30px] pb-10 lg:pt-0'>
+          <div className='lg:w-1/2 px-3 md:px-[30px] lg:px-0 lg:pl-[30px] pb-10 lg:pb-0'>
             <Subtitle text="About Me" icon="justify-center lg:justify-start" />
             <Title
             className="leading-[50px]  text-center lg:text-left md:leading-[56px]"
@@ -73,7 +72,6 @@ const About = () => {
           <AboutProg number="60%" text="Brand Design"/>
           <AboutProg number="40%" text="Web Development"/>
         </Grid>
-        </div>
       </Container>
     </section>
   )

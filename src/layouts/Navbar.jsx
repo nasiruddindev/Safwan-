@@ -5,6 +5,7 @@ import Logo from "../assets/logo.png"
 import ListItem from '../components/ListItem'
 import Button from '../components/Button'
 import { MdMenu } from "react-icons/md";
+import { RxCross2 } from "react-icons/rx";
 import { useState } from 'react'
 import Banner from "../layouts/Banner"
 
@@ -17,14 +18,14 @@ const Navbar = () => {
     <nav className='py-4'>
       <Container>
 
-        <div className='w-[100vw] px-5 lg:px-0 xl:w-full'>
+        <div className= 'px-5 lg:px-0'>
           <Flex className="justify-between items-center">
           <div>
             <Image src={Logo}/>
           </div>
 
 
-          <div className={`md:static absolute duration-300 ${showMenu ?  "top-[70px]" : "top-[-100%]"}  left-0 w-full md:w-auto bg-white z-10 text-center `}>
+          <div className={`md:static absolute duration-300 ${showMenu ?  "top-[70px]" : "top-[-100%]"}  left-0 w-full md:w-auto bg-white z-50 text-center `}>
 
 
             <ul className='flex flex-col md:flex-row md:gap-x-8 lg:gap-x-12 gap-y-5 py-5'>
@@ -36,9 +37,12 @@ const Navbar = () => {
               <div className='md:hidden'><Button text="Download CV"/></div>
             </ul>
           </div>
-          <div>
-            <Button className='hidden md:block' text="Download CV"/>
-            <MdMenu onClick={()=> setShowMenu(!showMenu)} className='text-3xl text-primary md:hidden  cursor-pointer'/>
+          <div className='hidden md:block'>
+            <Button  text="Download CV"/>
+          </div>
+          <div onClick={()=>{setShowMenu (!showMenu)}} className='md:hidden cursor-pointer'>
+            {showMenu?<RxCross2 className='text-3xl text-primary '/>:<MdMenu  className='text-3xl text-primary '/>}
+
           </div>
         </Flex>
         </div>

@@ -15,7 +15,6 @@ const Portfolio = () => {
   return (
     <section className="pb-[80px] md:pb-[120px]">
       <Container>
-        <div className='w-[100vw] xl:w-full'>
           <Subtitle text="My Portfolio" icon="justify-center"/>
         <Title text="My Work Example" className="text-center pb-6"/>
 
@@ -32,7 +31,6 @@ const Portfolio = () => {
           <PortfolioCard src={Wapp} title="Web Application" pera="Desktop"/>
           <PortfolioCard src={Visual} title="Visual Design" pera="Desktop "/>
         </Grid>
-        </div>
       </Container>
     </section>
   )
